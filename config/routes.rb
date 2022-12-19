@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root "main#index"
+
+  match 'about', to: "main#index", via: :get
   get 'main/index'
   get 'task/index'
   get 'task/new'
