@@ -4,4 +4,8 @@ class MainController < ApplicationController
 
   def about
   end
+
+  def hello
+    redirect_to(action: 'index')
+  end
 end
